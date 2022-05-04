@@ -1,8 +1,9 @@
 <!-- <div *ngIf="false"> -->
-  <ng-content [select]="[select-option]"></ng-content>
+  <!-- <ng-content [select]="[select-option]"></ng-content> -->
+  <!-- <ng-content select="p"></ng-content> -->
 <!-- </div> -->
 <select>
-  <option *ngFor="let opt of myOptions">
-    {{opt}}
+  <option *ngFor="let opt of myOptions" [innerHTML]="opt.nativeElement.outerHTML">
+    <!-- {{opt}} -->
   </option>
 </select>
