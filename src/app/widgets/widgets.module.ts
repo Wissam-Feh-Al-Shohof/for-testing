@@ -8,6 +8,7 @@ import { SelectComponent } from './select/select.component';
   declarations: [SelectComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports:[SelectComponent]
 })
 export class WidgetsModule { }
