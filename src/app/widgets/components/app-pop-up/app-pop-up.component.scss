@@ -1,0 +1,28 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: first baseline;
+  background-color: azure;
+  min-width: max-content;
+  border: 1px solid rgb(71, 69, 69);
+  box-shadow: 3px 3px 5px darkolivegreen;
+  width:min(100px);
+  height: min(35px,5%);
+
+}
+.menu  div {
+  width: fit-content !important;
+  border-bottom: 1px solid gray !important;
+
+}
+.myBut {
+  background-color: #13a526;
+  color:white;
+  width:min(100px);
+  height: min(35px,5%);
+  border: unset;
+  border-radius: 7%;
+  box-shadow: 4px 5px 6px black;
+}

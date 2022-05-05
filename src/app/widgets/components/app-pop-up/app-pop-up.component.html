@@ -1,0 +1,12 @@
+<button class="myBut" (click)="isOpen = !isOpen" cdkOverlayOrigin type="button" #trigger="cdkOverlayOrigin">
+  {{ title ? title : isOpen ? 'close' : 'open'}}
+</button>
+<ng-template
+cdkConnectedOverlay
+[cdkConnectedOverlayOrigin]="trigger"
+[cdkConnectedOverlayOpen]="isOpen">
+<div class="menu">
+
+  <ng-content></ng-content>
+</div>
+</ng-template>
