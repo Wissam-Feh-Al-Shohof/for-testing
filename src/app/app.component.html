@@ -3,6 +3,15 @@
   <app-menu-item>from</app-menu-item>
   <app-menu-item>layout</app-menu-item>
 </app-pop-up>
+
+<button [appPopover]="popoverTemplate">show/hide popover</button>
+
+<ng-template #popoverTemplate>
+  <article class="card">
+    <h2>Some Title</h2>
+    <p>Hello World</p>
+  </article>
+</ng-template>
 <!-- <app-select>
   <p  #p >hello without a thing</p>
   <p select-option #p>hello without another thing</p>

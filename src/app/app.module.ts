@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WidgetsModule } from './widgets/widgets.module';
+import { PopoverModule } from './widgets/popover/popover.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { WidgetsModule } from './widgets/widgets.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    WidgetsModule
+    WidgetsModule,
+    PopoverModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

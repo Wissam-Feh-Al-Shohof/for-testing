@@ -2,3 +2,8 @@
 html, body { height: 100%; }
 @import '@angular/cdk/overlay-prebuilt.css';
 body { margin: 30px 5%; padding:5%;font-family: Roboto, "Helvetica Neue", sans-serif;border:1px solid green; box-shadow: 1in; }
+
+
+.transparent{
+  opacity: 0;
+}
