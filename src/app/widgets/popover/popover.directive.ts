@@ -98,7 +98,7 @@ export class PopoverDirective implements OnInit, OnChanges, OnDestroy {
     })
   }
 
-  ngOnChanges(changes: Record<keyof typeof this, SimpleChange>): void {
+  ngOnChanges(changes: Record<keyof PopoverDirective, SimpleChange>): void {
     if(changes['appPopover']){
       // whenever the template changes we need to handle these changes
       this._handleTemplateChanged();
