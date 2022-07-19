@@ -12,6 +12,11 @@
     <p>Hello World</p>
   </article>
 </ng-template>
+<div *ngFor="let image of [1,2,3,4,5,6,7,8,9,10]">
+  <img width="500" height="500" (appVisible)="onVisible($event)" [id]="image" [hadObserved]= "doNothing"/>
+
+</div>
+
 <!-- <app-select>
   <p  #p >hello without a thing</p>
   <p select-option #p>hello without another thing</p>

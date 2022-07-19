@@ -23,4 +23,12 @@ export class AppComponent implements AfterViewInit , AfterContentInit, DoCheck {
     this.route.url === '/test' ? this.showRoute = true :null;
 
   }
+  onVisible(event: any) {
+    const elem =document.getElementById(event as string);
+    elem?.setAttribute('src',`../assets/images/${event}.jpg`);
+  }
+
+  doNothing() {
+    console.log('nothing INTERESTING');
+  }
 }

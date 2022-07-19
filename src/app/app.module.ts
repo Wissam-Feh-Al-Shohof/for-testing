@@ -1,3 +1,4 @@
+import { CoreModule } from './core/core.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -14,6 +15,7 @@ import { PopoverModule } from './widgets/popover/popover.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CoreModule,
     BrowserAnimationsModule,
     WidgetsModule,
     PopoverModule,

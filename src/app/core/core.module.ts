@@ -10,6 +10,7 @@ import { VisibleDirective } from './visible/visible.directive';
   imports: [
     CommonModule,
     CoreRoutingModule
-  ]
+  ],
+  exports: [VisibleDirective]
 })
 export class CoreModule { }
