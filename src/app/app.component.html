@@ -1,28 +1,10 @@
-<app-pop-up title="hi">
-  <app-menu-item>hello</app-menu-item>
-  <app-menu-item>from</app-menu-item>
-  <app-menu-item>layout</app-menu-item>
-</app-pop-up>
-<button [popup]="popoverTemplate">Test Directive</button>
-<button [appPopover]="popoverTemplate">show/hide popover</button>
-
-<ng-template #popoverTemplate>
-  <article class="card">
-    <h2>Some Title</h2>
-    <p>Hello World</p>
-  </article>
-</ng-template>
-<div *ngFor="let image of [1,2,3,4,5,6,7,8,9,10]">
-  <img width="500" height="500" (appVisible)="onVisible($event)" [id]="image" [hadObserved]= "doNothing"/>
-
+<div class="row">
+  <div class="col-6">
+    <div *ngFor="let imageUrl of imagesList; index as index">
+      <img #imgElem width="128" height="128" (visible)="imgElem.src = imageUrl" observeOnce
+        [visibleRatio]="0.9">
+    </div>
+  </div>
 </div>
-
-<!-- <app-select>
-  <p  #p >hello without a thing</p>
-  <p select-option #p>hello without another thing</p>
-  <span #p><h3>foo bar</h3></span>
-  <p>hi</p>
-</app-select> -->
 <br><br>
-
 <router-outlet *ngIf="showRoute"></router-outlet>

@@ -9,6 +9,16 @@ import { ActivatedRouteSnapshot, Router } from '@angular/router';
 export class AppComponent implements AfterViewInit , AfterContentInit, DoCheck {
   title = 'CV';
   showRoute = false;
+
+
+  /** list of image urls */
+  readonly imagesList = 
+    new Array(10)
+    .fill(0)
+    .map((_, n) => n+1)
+    .map(n => `assets/images/${n}.jpg`);
+
+
   constructor(private route:Router ){
   }
   ngDoCheck(): void {
